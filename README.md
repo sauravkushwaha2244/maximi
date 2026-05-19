@@ -20,7 +20,7 @@ A full-stack Flat Expense app built with React, Node.js, Express, and MongoDB.
 ```bash
 cd backend
 npm install
-copy .env.example .env
+cp .env.example .env  # or copy .env.example .env on Windows
 npm run dev
 ```
 
@@ -44,9 +44,11 @@ Frontend runs on:
 http://localhost:5173
 ```
 
-## MongoDB
+The frontend automatically proxies `/api/*` requests to the backend during local development.
 
-Use local MongoDB or MongoDB Atlas.
+## Storage
+
+The backend uses file-based storage (data.json). No database setup required for local development.
 
 Example `.env`:
 

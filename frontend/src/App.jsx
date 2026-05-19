@@ -12,6 +12,9 @@ import {
   ResponsiveContainer
 } from "recharts";
 
+// API configuration - use environment variable or fallback to proxy
+const API_BASE_URL = import.meta.env.VITE_API_URL || "/api";
+
 const categories = ["Rent", "Electricity", "Grocery", "WiFi", "Water", "Food", "Cleaning", "Travel", "Other"];
 
 function App() {
@@ -41,7 +44,7 @@ function App() {
 
   const fetchExpenses = async () => {
     try {
-      const res = await fetch("/api/expenses");
+      const res = await fetch(`${API_BASE_URL}/expenses`);
       const data = await res.json();
       setExpenses(data);
     } catch {
@@ -51,7 +54,7 @@ function App() {
 
   const fetchMembers = async () => {
     try {
-      const res = await fetch("/api/members");
+      const res = await fetch(`${API_BASE_URL}/members`);
       const data = await res.json();
       setMembersList(data);
     } catch {
@@ -61,7 +64,7 @@ function App() {
 
   const saveWhatsappNumber = async (memberName, whatsappNumber) => {
     try {
-      const res = await fetch(`/api/members/${encodeURIComponent(memberName)}`, {
+      const res = await fetch(`${API_BASE_URL}/members/${encodeURIComponent(memberName)}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ whatsappNumber })
@@ -101,7 +104,7 @@ function App() {
     };
 
     try {
-      const res = await fetch("/api/expenses", {
+      const res = await fetch(`${API_BASE_URL}/expenses`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -132,14 +135,14 @@ function App() {
   };
 
   const deleteExpense = async (id) => {
-    await fetch(`/api/expenses/${id}`, {
+    await fetch(`${API_BASE_URL}/expenses/${id}`, {
       method: "DELETE"
     });
     fetchExpenses();
   };
 
   const settleExpense = async (id) => {
-    await fetch(`/api/expenses/${id}/settle`, {
+    await fetch(`${API_BASE_URL}/expenses/${id}/settle`, {
       method: "PATCH"
     });
     fetchExpenses();
