@@ -1,53 +1,20 @@
 {
   "expenses": [
     {
-      "_id": "1779175525304",
-      "title": "tour",
-      "amount": 45623,
-      "category": "WiFi",
-      "paidBy": "tarang",
+      "_id": "1779231972298",
+      "title": "hjfhv",
+      "amount": 7852,
+      "category": "Food",
+      "paidBy": "tff",
       "members": [
-        "saurav",
-        "tarang",
-        "deepak"
+        "hujgukg",
+        "tff"
       ],
       "date": "2026-05-19",
       "notes": "",
       "settled": false,
-      "createdAt": "2026-05-19T07:25:25.304Z",
-      "updatedAt": "2026-05-19T07:25:25.304Z"
-    },
-    {
-      "_id": "1779176220307",
-      "title": "rent",
-      "amount": 78956,
-      "category": "Electricity",
-      "paidBy": "maddy",
-      "members": [
-        "saurav",
-        "maddy"
-      ],
-      "date": "2026-05-19",
-      "notes": "nn",
-      "settled": false,
-      "createdAt": "2026-05-19T07:37:00.307Z",
-      "updatedAt": "2026-05-19T07:37:00.307Z"
-    },
-    {
-      "_id": "1779176480801",
-      "title": "maths",
-      "amount": 12301,
-      "category": "Food",
-      "paidBy": "maddy",
-      "members": [
-        "saurav",
-        "maddy"
-      ],
-      "date": "2026-05-19",
-      "notes": "kl",
-      "settled": false,
-      "createdAt": "2026-05-19T07:41:20.801Z",
-      "updatedAt": "2026-05-19T07:41:20.801Z"
+      "createdAt": "2026-05-19T23:06:12.298Z",
+      "updatedAt": "2026-05-19T23:06:12.298Z"
     }
   ]
 }
