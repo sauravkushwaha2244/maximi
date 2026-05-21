@@ -15,6 +15,39 @@
       "settled": false,
       "createdAt": "2026-05-19T23:06:12.298Z",
       "updatedAt": "2026-05-19T23:06:12.298Z"
+    },
+    {
+      "_id": "1779331114612",
+      "title": "food",
+      "amount": 566,
+      "category": "Food",
+      "paidBy": "kumar",
+      "members": [
+        "saurav",
+        "kumar"
+      ],
+      "date": "2026-05-21",
+      "notes": "njd",
+      "settled": false,
+      "createdAt": "2026-05-21T02:38:34.612Z",
+      "updatedAt": "2026-05-21T02:38:34.612Z"
+    },
+    {
+      "_id": "1779332006764",
+      "title": "Movie Tickets",
+      "amount": 900,
+      "category": "Food",
+      "paidBy": "Alice",
+      "members": [
+        "Alice",
+        "Bob",
+        "Charlie"
+      ],
+      "date": "2026-05-21",
+      "notes": "",
+      "settled": false,
+      "createdAt": "2026-05-21T02:53:26.764Z",
+      "updatedAt": "2026-05-21T02:53:26.764Z"
     }
   ]
 }

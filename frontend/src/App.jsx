@@ -387,6 +387,7 @@ function App() {
               value={form.paidBy}
               onChange={(e) => setForm({ ...form, paidBy: e.target.value })}
             >
+              <option value="">Select who paid</option>
               {members.map((member) => (
                 <option key={member}>{member}</option>
               ))}
