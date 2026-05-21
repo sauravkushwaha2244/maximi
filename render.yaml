@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: flatexpense-backend
+    runtime: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: FRONTEND_URL
+        value: https://maximi-k3lz.vercel.app
+      - key: NODE_ENV
+        value: production
